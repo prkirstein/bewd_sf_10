@@ -1,0 +1,5 @@
+require 'pry'
+require 'pry-byebug'
+
+def my_reverse(string)
+  puts 'this is my word #[string]'

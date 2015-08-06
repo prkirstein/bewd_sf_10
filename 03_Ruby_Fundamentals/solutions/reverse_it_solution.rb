@@ -1,5 +1,4 @@
 require 'pry'
-require 'pry-byebug'
 
 def my_reverse(string)
   char = string.downcase.chars #transforming string into an array of chars

@@ -40,12 +40,19 @@ def create_story_hash(story)
 #  puts "#{story["title"]}" #provides the title
 #  puts "#{story["subreddit"]}" #provides the subreddit
 #  puts "#{story["ups"]}" #provides the ups
+  create_story_array(story_hash)
 end
+
+#5. Create array
 
 def create_story_array(stories)
   story_array = []
-  stroy_array.push(stories)
+  story_array.push(stories)
+  #6. Print each story from the array
+  puts story_array.each
 end
+
+
 
 reddit_url = "http://www.reddit.com/.json"
 reddit_json_response = connect_to_api(reddit_url)

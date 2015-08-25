@@ -1,5 +1,4 @@
 require 'pry'
-require 'pry-byebug'
 
 class Robot
   #creates getter && setter methods for each attribute
@@ -53,3 +52,10 @@ class Robot
 end
 
 Robot.make_robots(50)
+
+tanya_bot = Robot.new("Tanya", "Android", "Oakland")
+"Here are Tanya's skills #{tanya_bot.laser_fighting_skills}"
+
+
+#NOOOOOOOO tanya_bot.make_robots(4)
+Robot.flying_skills

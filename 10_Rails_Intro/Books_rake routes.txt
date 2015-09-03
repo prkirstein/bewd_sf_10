@@ -1,0 +1,15 @@
+   Prefix Verb   URI Pattern               Controller#Action
+    books GET    /books(.:format)          books#index - lists all books
+          POST   /books(.:format)          books#create - creates a new book
+ new_book GET    /books/new(.:format)      books#new - collects information for new
+edit_book GET    /books/:id/edit(.:format) books#edit - edits books
+     book GET    /books/:id(.:format)      books#show - shows the information in instance of book
+          PATCH  /books/:id(.:format)      books#update - updates book information
+          PUT    /books/:id(.:format)      books#update - updates book information
+          DELETE /books/:id(.:format)      books#destroy - destroys book
+
+
+get requests get information from user, from database, or from other places!
+post creates stuff with the data
+puts does ??! 
+delete well DUH

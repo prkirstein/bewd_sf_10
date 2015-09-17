@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+#  get 'static_pages/home' got rid of these and set up custom below
+#  get 'static_pages/about' got rid of these and set up custom below
+  get 'static_pages/test'
+
+  #establish a custome route
+  get 'about', to: "static_pages#about", as: 'about'
+  #get 'about' <-- when someone says /about it is a get request
+  #to: ..... <-- which controller and action is responsible? static pages with action about
+  #as 'about' create a new path called the about path
+
+  get 'test', to: "static_pages#test", as: 'test'
+  #establish a root_path
+  root 'static_pages#home' #this is a standard root page, the intro
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

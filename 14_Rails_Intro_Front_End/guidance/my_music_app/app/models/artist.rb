@@ -1,4 +1,4 @@
-or# == Schema Information
+# == Schema Information
 #
 # Table name: artists
 #
